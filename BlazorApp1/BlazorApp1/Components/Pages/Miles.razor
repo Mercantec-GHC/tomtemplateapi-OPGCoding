@@ -1,0 +1,63 @@
+﻿@page "/miles"
+@rendermode InteractiveServer
+@inject HttpClient Http
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@* @inject IJSRuntime JSRuntime *@
+
+
+<PageTitle>Miles95</PageTitle>
+
+<button @onclick="FetchData">Get Data</button>
+
+
+@* <script src="./Chart.js"></script>
+<canvas id="myChart" width="400" height="200"></canvas> *@
+
+
+@if (datas != null)
+{
+    @foreach (var data in datas)
+    {
+        <h5>Date: @data.Date</h5>
+        <h6>Price: @data.Price</h6>
+    }
+}
+
+@code {
+    public List<Data>? datas;
+
+    public async Task FetchData()
+    {
+        Console.WriteLine("FetchData called");
+
+        // Fetch the raw JSON as a string for debugging
+        string json = await Http.GetStringAsync("https://magsapi.onrender.com/api/miles95");
+        Console.WriteLine($"Raw JSON: {json}");
+
+        try
+        {
+            datas = JsonSerializer.Deserialize<List<Data>>(json);
+            Console.WriteLine("Deserialization successful");
+        }
+        catch (JsonException ex)
+        {
+            Console.WriteLine($"Deserialization error: {ex.Message}");
+            Console.WriteLine($"Stack Trace: {ex.StackTrace}");
+        }
+
+        // Trigger a JavaScript function to render the chart
+        // await JSRuntime.InvokeVoidAsync("renderChart", datas);
+
+        StateHasChanged();
+    }
+
+    public class Data
+    {
+        [JsonPropertyName("Date")]
+        public string Date { get; set; }
+
+        [JsonPropertyName("Price")]
+        public string Price { get; set; }
+    }
+}

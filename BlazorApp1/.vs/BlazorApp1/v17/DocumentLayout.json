@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\blsto\\OneDrive\\Dokumenter\\GitHub\\tomtemplateapi-OPGCoding\\BlazorApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\blsto\\onedrive\\dokumenter\\github\\tomtemplateapi-opgcoding\\blazorapp1\\blazorapp1\\components\\pages\\miles.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\components\\pages\\miles.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\blsto\\onedrive\\dokumenter\\github\\tomtemplateapi-opgcoding\\blazorapp1\\blazorapp1\\wwwroot\\chart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\wwwroot\\chart.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\blsto\\onedrive\\dokumenter\\github\\tomtemplateapi-opgcoding\\blazorapp1\\blazorapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\blsto\\onedrive\\dokumenter\\github\\tomtemplateapi-opgcoding\\blazorapp1\\blazorapp1\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Miles.razor",
+              "DocumentMoniker": "C:\\Users\\blsto\\OneDrive\\Dokumenter\\GitHub\\tomtemplateapi-OPGCoding\\BlazorApp1\\BlazorApp1\\Components\\Pages\\Miles.razor",
+              "RelativeDocumentMoniker": "BlazorApp1\\Components\\Pages\\Miles.razor",
+              "ToolTip": "C:\\Users\\blsto\\OneDrive\\Dokumenter\\GitHub\\tomtemplateapi-OPGCoding\\BlazorApp1\\BlazorApp1\\Components\\Pages\\Miles.razor",
+              "RelativeToolTip": "BlazorApp1\\Components\\Pages\\Miles.razor",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-07T10:51:34.797Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Chart.js",
+              "DocumentMoniker": "C:\\Users\\blsto\\OneDrive\\Dokumenter\\GitHub\\tomtemplateapi-OPGCoding\\BlazorApp1\\BlazorApp1\\wwwroot\\Chart.js",
+              "RelativeDocumentMoniker": "BlazorApp1\\wwwroot\\Chart.js",
+              "ToolTip": "C:\\Users\\blsto\\OneDrive\\Dokumenter\\GitHub\\tomtemplateapi-OPGCoding\\BlazorApp1\\BlazorApp1\\wwwroot\\Chart.js",
+              "RelativeToolTip": "BlazorApp1\\wwwroot\\Chart.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-07T11:19:12.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\blsto\\OneDrive\\Dokumenter\\GitHub\\tomtemplateapi-OPGCoding\\BlazorApp1\\BlazorApp1\\Program.cs",
+              "RelativeDocumentMoniker": "BlazorApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\blsto\\OneDrive\\Dokumenter\\GitHub\\tomtemplateapi-OPGCoding\\BlazorApp1\\BlazorApp1\\Program.cs",
+              "RelativeToolTip": "BlazorApp1\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T10:52:57.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\blsto\\OneDrive\\Dokumenter\\GitHub\\tomtemplateapi-OPGCoding\\BlazorApp1\\BlazorApp1\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "BlazorApp1\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\blsto\\OneDrive\\Dokumenter\\GitHub\\tomtemplateapi-OPGCoding\\BlazorApp1\\BlazorApp1\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "BlazorApp1\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-07T10:51:55.726Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
