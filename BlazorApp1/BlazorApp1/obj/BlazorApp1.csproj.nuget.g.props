@@ -13,6 +13,9 @@
     <SourceRoot Include="C:\Users\blsto\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)blazor-apexcharts\3.4.0\buildTransitive\Blazor-ApexCharts.props" Condition="Exists('$(NuGetPackageRoot)blazor-apexcharts\3.4.0\buildTransitive\Blazor-ApexCharts.props')" />
+  </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_AspNetCore_Components_WebAssembly_Server Condition=" '$(PkgMicrosoft_AspNetCore_Components_WebAssembly_Server)' == '' ">C:\Users\blsto\.nuget\packages\microsoft.aspnetcore.components.webassembly.server\8.0.7</PkgMicrosoft_AspNetCore_Components_WebAssembly_Server>
   </PropertyGroup>

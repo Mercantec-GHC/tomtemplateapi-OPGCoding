@@ -3,30 +3,46 @@
 @inject HttpClient Http
 @using System.Text.Json
 @using System.Text.Json.Serialization
-@* @inject IJSRuntime JSRuntime *@
+@using ApexCharts
 
-
-<PageTitle>Miles95</PageTitle>
+<PageTitle>Miles</PageTitle>
 
 <button @onclick="FetchData">Get Data</button>
 
 
-@* <script src="./Chart.js"></script>
-<canvas id="myChart" width="400" height="200"></canvas> *@
-
-
 @if (datas != null)
 {
-    @foreach (var data in datas)
-    {
-        <h5>Date: @data.Date</h5>
-        <h6>Price: @data.Price</h6>
-    }
+    <ApexChart TItem="Data" Title="Miles" XAxisType="XAxisType.Datetime">
+        <ApexPointSeries TItem="Data" Items="datas" Name="Miles95" SeriesType="SeriesType.Area" XValue="@(e => e.Date)" YValue="@(e => e.PriceDecimal)" />
+    </ApexChart>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var data in datas)
+            {
+                <tr>
+                    <td>@data.Date.ToString("yyyy-MM-dd")</td>
+                    <td>@data.PriceDecimal</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 }
 
 @code {
     public List<Data>? datas;
+    private string? data;
 
+    protected override async Task OnInitializedAsync()
+    {
+        // Asynchronous initialization
+        data = await Http.GetStringAsync("https://magsapi.onrender.com/api/miles95");
+    }
     public async Task FetchData()
     {
         Console.WriteLine("FetchData called");
@@ -37,8 +53,29 @@
 
         try
         {
-            datas = JsonSerializer.Deserialize<List<Data>>(json);
-            Console.WriteLine("Deserialization successful");
+            // Deserialize the data
+            datas = JsonSerializer.Deserialize<List<Data>>(json, new JsonSerializerOptions
+                {
+                    PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+                });
+
+            // Convert Price from string to decimal
+            if (datas != null)
+            {
+                foreach (var data in datas)
+                {
+                    if (decimal.TryParse(data.Price, out var price))
+                    {
+                        data.PriceDecimal = price; // Use this property for charting
+                    }
+                    else
+                    {
+                        // Handle conversion error or set a default value
+                        data.PriceDecimal = 0;
+                    }
+                }
+            }
+            Console.WriteLine("Deserialization and conversion successful");
         }
         catch (JsonException ex)
         {
@@ -46,18 +83,19 @@
             Console.WriteLine($"Stack Trace: {ex.StackTrace}");
         }
 
-        // Trigger a JavaScript function to render the chart
-        // await JSRuntime.InvokeVoidAsync("renderChart", datas);
-
         StateHasChanged();
     }
 
     public class Data
     {
         [JsonPropertyName("Date")]
-        public string Date { get; set; }
+        public DateTime Date { get; set; }
 
         [JsonPropertyName("Price")]
-        public string Price { get; set; }
+        public string Price { get; set; } = string.Empty;
+
+        // Property used for charting
+        [JsonIgnore]
+        public decimal PriceDecimal { get; set; }
     }
 }

@@ -87,3 +87,12 @@ C:\Users\blsto\OneDrive\Dokumenter\GitHub\tomtemplateapi-OPGCoding\BlazorApp1\Bl
 C:\Users\blsto\OneDrive\Dokumenter\GitHub\tomtemplateapi-OPGCoding\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.pdb
 C:\Users\blsto\OneDrive\Dokumenter\GitHub\tomtemplateapi-OPGCoding\BlazorApp1\BlazorApp1\obj\Debug\net8.0\BlazorApp1.genruntimeconfig.cache
 C:\Users\blsto\OneDrive\Dokumenter\GitHub\tomtemplateapi-OPGCoding\BlazorApp1\BlazorApp1\obj\Debug\net8.0\ref\BlazorApp1.dll
+C:\Users\blsto\OneDrive\Dokumenter\GitHub\tomtemplateapi-OPGCoding\BlazorApp1\BlazorApp1\bin\Debug\net8.0\Blazor-ApexCharts.dll
+C:\Users\blsto\OneDrive\Dokumenter\GitHub\tomtemplateapi-OPGCoding\BlazorApp1\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\blsto\OneDrive\Dokumenter\GitHub\tomtemplateapi-OPGCoding\BlazorApp1\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\blsto\OneDrive\Dokumenter\GitHub\tomtemplateapi-OPGCoding\BlazorApp1\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\blsto\OneDrive\Dokumenter\GitHub\tomtemplateapi-OPGCoding\BlazorApp1\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\blsto\OneDrive\Dokumenter\GitHub\tomtemplateapi-OPGCoding\BlazorApp1\BlazorApp1\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\blsto\OneDrive\Dokumenter\GitHub\tomtemplateapi-OPGCoding\BlazorApp1\BlazorApp1\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\blsto\OneDrive\Dokumenter\GitHub\tomtemplateapi-OPGCoding\BlazorApp1\BlazorApp1\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\blsto\OneDrive\Dokumenter\GitHub\tomtemplateapi-OPGCoding\BlazorApp1\BlazorApp1\obj\Debug\net8.0\scopedcss\Components\Pages\Miles.razor.rz.scp.css

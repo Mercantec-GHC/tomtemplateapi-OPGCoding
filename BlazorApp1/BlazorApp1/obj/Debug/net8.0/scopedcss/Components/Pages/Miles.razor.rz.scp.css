@@ -1,0 +1,32 @@
+.fetch-button[b-15l5dz20b5] {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.data-table[b-15l5dz20b5] {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    .data-table th[b-15l5dz20b5], .data-table td[b-15l5dz20b5] {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    .data-table th[b-15l5dz20b5] {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #f2f2f2;
+        color: black;
+    }
+
+    .data-table tr:nth-child(even)[b-15l5dz20b5] {
+        background-color: #f9f9f9;
+    }
+
+    .data-table tr:hover[b-15l5dz20b5] {
+        background-color: #ddd;
+    }
