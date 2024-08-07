@@ -43,8 +43,7 @@
               "ViewState": "AQIAAAkAAAAAAAAAAAAAACEAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-07T10:51:55.726Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -54,7 +53,7 @@
               "RelativeDocumentMoniker": "BlazorApp1\\Components\\Pages\\Miles.razor",
               "ToolTip": "C:\\Users\\blsto\\OneDrive\\Dokumenter\\GitHub\\tomtemplateapi-OPGCoding\\BlazorApp1\\BlazorApp1\\Components\\Pages\\Miles.razor",
               "RelativeToolTip": "BlazorApp1\\Components\\Pages\\Miles.razor",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-07T10:51:34.797Z",
               "IsPinned": true,
@@ -74,8 +73,7 @@
               "RelativeToolTip": "BlazorApp1\\Components\\Pages\\Charts.razor",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-07T12:04:44.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T12:04:44.05Z"
             },
             {
               "$type": "Document",
@@ -87,8 +85,7 @@
               "RelativeToolTip": "BlazorApp1\\wwwroot\\Chart.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-07T11:19:12.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T11:19:12.76Z"
             },
             {
               "$type": "Document",

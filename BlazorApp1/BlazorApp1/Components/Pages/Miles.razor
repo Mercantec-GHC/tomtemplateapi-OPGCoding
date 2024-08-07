@@ -15,8 +15,8 @@
     <ApexChart TItem="Data" Title="Miles" XAxisType="XAxisType.Datetime">
         <ApexPointSeries TItem="Data" Items="datas" Name="Miles95" SeriesType="SeriesType.Area" XValue="@(e => e.Date)" YValue="@(e => e.PriceDecimal)" />
     </ApexChart>
-    <table class="data-table">
-        <thead>
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
             <tr>
                 <th>Date</th>
                 <th>Price</th>
