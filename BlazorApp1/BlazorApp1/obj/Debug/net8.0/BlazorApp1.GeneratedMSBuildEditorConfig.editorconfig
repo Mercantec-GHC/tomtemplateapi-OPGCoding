@@ -22,10 +22,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/blsto/OneDrive/Dokumenter/GitHub/tomtemplateapi-OPGCoding/BlazorApp1/BlazorApp1/Components/Pages/Charts.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDaGFydHMucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/blsto/OneDrive/Dokumenter/GitHub/tomtemplateapi-OPGCoding/BlazorApp1/BlazorApp1/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,8 +34,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/blsto/OneDrive/Dokumenter/GitHub/tomtemplateapi-OPGCoding/BlazorApp1/BlazorApp1/Components/Pages/Miles.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNaWxlcy5yYXpvcg==
+[C:/Users/blsto/OneDrive/Dokumenter/GitHub/tomtemplateapi-OPGCoding/BlazorApp1/BlazorApp1/Components/Pages/MilesDiesel.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNaWxlc0RpZXNlbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/blsto/OneDrive/Dokumenter/GitHub/tomtemplateapi-OPGCoding/BlazorApp1/BlazorApp1/Components/Pages/MilesPatrol.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xNaWxlc1BhdHJvbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/blsto/OneDrive/Dokumenter/GitHub/tomtemplateapi-OPGCoding/BlazorApp1/BlazorApp1/Components/Pages/Weather.razor]

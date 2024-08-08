@@ -1,0 +1,78 @@
+﻿@page "/milesDiesel"
+@rendermode InteractiveServer
+@inject HttpClient Http
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@using ApexCharts
+
+<PageTitle>Diesel</PageTitle>
+
+@if (datas != null)
+{
+    <ApexChart TItem="Data" Title="Diesel" XAxisType="XAxisType.Datetime">
+        <ApexPointSeries TItem="Data" Items="datas" Name="MilesDiesel" SeriesType="SeriesType.Area" XValue="@(e => e.Date)" YValue="@(e => e.PriceDecimal)" />
+    </ApexChart>
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Date</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var data in datas)
+            {
+                <tr>
+                    <td>@data.Date.ToString("dd-MM-yyyy")</td>
+                    <td>@data.Price</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    public List<Data>? datas;
+    private string? data;
+    protected override async Task OnInitializedAsync()
+    {
+        Console.WriteLine("FetchData called");
+
+        // Fetch the raw JSON as a string for debugging
+        string json = await Http.GetStringAsync("https://magsapi.onrender.com/api/diesel");
+        Console.WriteLine($"Raw JSON: {json}");
+
+        try
+        {
+            // Deserialize the data
+            datas = JsonSerializer.Deserialize<List<Data>>(json);
+
+            // Convert Price from string to decimal
+            if (datas != null)
+            {
+                foreach (var data in datas)
+                {
+                    if (decimal.TryParse(data.Price, out var price))
+                    {
+                        data.PriceDecimal = price; // Use this property for charting
+                    }
+                    else
+                    {
+                        // Handle conversion error or set a default value
+                        data.PriceDecimal = 0;
+                    }
+                }
+            }
+            Console.WriteLine("Deserialization and conversion successful");
+        }
+        catch (JsonException ex)
+        {
+            Console.WriteLine($"Deserialization error: {ex.Message}");
+            Console.WriteLine($"Stack Trace: {ex.StackTrace}");
+        }
+
+        StateHasChanged();
+    }
+
+    
+}

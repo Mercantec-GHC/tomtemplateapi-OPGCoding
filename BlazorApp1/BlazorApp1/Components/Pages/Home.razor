@@ -1,7 +1,145 @@
 ﻿@page "/"
+@rendermode InteractiveServer
+@inject HttpClient Http
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@using ApexCharts
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+@if (apiDataList.Any())
+{
+    <ApexChart TItem="Data" Title="Fuel Prices" XAxisType="XAxisType.Datetime">
+        <ApexPointSeries TItem="Data" Items="@(apiDataList.SelectMany(x => x.DieselData).ToList())" Name="Diesel" SeriesType="SeriesType.Area" XValue="@(e => e.Date)" YValue="@(e => e.PriceDecimal)" />
+        <ApexPointSeries TItem="Data" Items="@(apiDataList.SelectMany(x => x.PatrolData).ToList())" Name="Miles95" SeriesType="SeriesType.Area" XValue="@(e => e.Date)" YValue="@(e => e.PriceDecimal)" />
+    </ApexChart>
 
-Welcome to your new app.
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Diesel Data Table</h3>
+                <table class="table table-striped table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Date</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var data in apiDataList.SelectMany(x => x.DieselData))
+                        {
+                            <tr>
+                                <td>@data.Date.ToString("dd-MM-yyyy")</td>
+                                <td>@data.Price</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-6">
+                <h3>Patrol Data Table</h3>
+                <table class="table table-striped table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Date</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var data in apiDataList.SelectMany(x => x.PatrolData))
+                        {
+                            <tr>
+                                <td>@data.Date.ToString("dd-MM-yyyy")</td>
+                                <td>@data.Price</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p>No data available.</p>
+}
+
+@code {
+    private List<APIUrl> apiUrls = new List<APIUrl>
+    {
+        new APIUrl { Diesel = "https://magsapi.onrender.com/api/diesel", Patrol = "https://magsapi.onrender.com/api/miles95" },
+    };
+
+    private List<APIData> apiDataList = new List<APIData>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        foreach (var apiUrl in apiUrls)
+        {
+            // Fetch JSON data
+            var dieselJson = await FetchApiData(apiUrl.Diesel);
+            var patrolJson = await FetchApiData(apiUrl.Patrol);
+            Console.WriteLine(dieselJson);
+            Console.WriteLine(patrolJson);
+
+            // Deserialize JSON data
+            var dieselData = JsonSerializer.Deserialize<List<Data>>(dieselJson);
+            var patrolData = JsonSerializer.Deserialize<List<Data>>(patrolJson);
+
+            // Convert Price from string to decimal
+            if (dieselData != null)
+            {
+                foreach (var data in dieselData)
+                {
+                    if (decimal.TryParse(data.Price, out var price))
+                    {
+                        data.PriceDecimal = price;
+                    }
+                    else
+                    {
+                        data.PriceDecimal = 0;
+                    }
+                }
+            }
+
+            if (patrolData != null)
+            {
+                foreach (var data in patrolData)
+                {
+                    if (decimal.TryParse(data.Price, out var price))
+                    {
+                        data.PriceDecimal = price;
+                    }
+                    else
+                    {
+                        data.PriceDecimal = 0;
+                    }
+                }
+            }
+
+            // Add to apiDataList
+            apiDataList.Add(new APIData
+                {
+                    DieselData = dieselData,
+                    PatrolData = patrolData
+                });
+        }
+
+        StateHasChanged();
+    }
+
+    // Method to fetch API data
+    async Task<string> FetchApiData(string url)
+    {
+        try
+        {
+            return await Http.GetStringAsync(url);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error fetching data from {url}: {ex.Message}");
+            return $"Error fetching data: {ex.Message}";
+        }
+    }
+}

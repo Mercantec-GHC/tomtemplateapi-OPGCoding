@@ -1,18 +1,15 @@
-﻿@page "/miles"
+﻿@page "/miles95"
 @rendermode InteractiveServer
 @inject HttpClient Http
 @using System.Text.Json
 @using System.Text.Json.Serialization
 @using ApexCharts
 
-<PageTitle>Miles</PageTitle>
-
-<button @onclick="FetchData">Get Data</button>
-
+<PageTitle>Patrol</PageTitle>
 
 @if (datas != null)
 {
-    <ApexChart TItem="Data" Title="Miles" XAxisType="XAxisType.Datetime">
+    <ApexChart TItem="Data" Title="Patrol" XAxisType="XAxisType.Datetime">
         <ApexPointSeries TItem="Data" Items="datas" Name="Miles95" SeriesType="SeriesType.Area" XValue="@(e => e.Date)" YValue="@(e => e.PriceDecimal)" />
     </ApexChart>
     <table class="table table-striped table-bordered">
@@ -26,8 +23,8 @@
             @foreach (var data in datas)
             {
                 <tr>
-                    <td>@data.Date.ToString("yyyy-MM-dd")</td>
-                    <td>@data.PriceDecimal</td>
+                    <td>@data.Date.ToString("dd-MM-yyyy")</td>
+                    <td>@data.Price</td>
                 </tr>
             }
         </tbody>
@@ -40,11 +37,6 @@
 
     protected override async Task OnInitializedAsync()
     {
-        // Asynchronous initialization
-        data = await Http.GetStringAsync("https://magsapi.onrender.com/api/miles95");
-    }
-    public async Task FetchData()
-    {
         Console.WriteLine("FetchData called");
 
         // Fetch the raw JSON as a string for debugging
@@ -54,10 +46,7 @@
         try
         {
             // Deserialize the data
-            datas = JsonSerializer.Deserialize<List<Data>>(json, new JsonSerializerOptions
-                {
-                    PropertyNamingPolicy = JsonNamingPolicy.CamelCase
-                });
+            datas = JsonSerializer.Deserialize<List<Data>>(json);
 
             // Convert Price from string to decimal
             if (datas != null)
@@ -84,18 +73,5 @@
         }
 
         StateHasChanged();
-    }
-
-    public class Data
-    {
-        [JsonPropertyName("Date")]
-        public DateTime Date { get; set; }
-
-        [JsonPropertyName("Price")]
-        public string Price { get; set; } = string.Empty;
-
-        // Property used for charting
-        [JsonIgnore]
-        public decimal PriceDecimal { get; set; }
     }
 }
