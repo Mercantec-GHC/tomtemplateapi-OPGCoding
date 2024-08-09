@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\blsto\\onedrive\\dokumenter\\github\\tomtemplateapi-opgcoding\\blazorapp1\\blazorapp1\\components\\pages\\apidata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\components\\pages\\apidata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\blsto\\onedrive\\dokumenter\\github\\tomtemplateapi-opgcoding\\blazorapp1\\blazorapp1\\components\\pages\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\components\\pages\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\blsto\\onedrive\\dokumenter\\github\\tomtemplateapi-opgcoding\\blazorapp1\\blazorapp1\\components\\pages\\milespatrol.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\components\\pages\\milespatrol.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\blsto\\onedrive\\dokumenter\\github\\tomtemplateapi-opgcoding\\blazorapp1\\blazorapp1\\components\\pages\\milesdiesel.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\components\\pages\\milesdiesel.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\blsto\\onedrive\\dokumenter\\github\\tomtemplateapi-opgcoding\\blazorapp1\\blazorapp1\\components\\pages\\milespatrol.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\components\\pages\\milespatrol.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\blsto\\onedrive\\dokumenter\\github\\tomtemplateapi-opgcoding\\blazorapp1\\blazorapp1\\components\\pages\\apidata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\components\\pages\\apidata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\blsto\\onedrive\\dokumenter\\github\\tomtemplateapi-opgcoding\\blazorapp1\\blazorapp1\\components\\pages\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|solutionrelative:blazorapp1\\components\\pages\\api.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBAAA39D-F4DC-4F05-B1CD-58B71FEE4882}|BlazorApp1\\BlazorApp1.csproj|c:\\users\\blsto\\onedrive\\dokumenter\\github\\tomtemplateapi-opgcoding\\blazorapp1\\blazorapp1\\components\\pages\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,8 +59,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-07T10:51:55.726Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -70,7 +69,7 @@
               "RelativeDocumentMoniker": "BlazorApp1\\Components\\Pages\\Home.razor",
               "ToolTip": "C:\\Users\\blsto\\OneDrive\\Dokumenter\\GitHub\\tomtemplateapi-OPGCoding\\BlazorApp1\\BlazorApp1\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "BlazorApp1\\Components\\Pages\\Home.razor",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAB4AAAAgAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-08T11:08:37.476Z",
               "IsPinned": true,
@@ -78,13 +77,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "MilesPatrol.razor",
               "DocumentMoniker": "C:\\Users\\blsto\\OneDrive\\Dokumenter\\GitHub\\tomtemplateapi-OPGCoding\\BlazorApp1\\BlazorApp1\\Components\\Pages\\MilesPatrol.razor",
               "RelativeDocumentMoniker": "BlazorApp1\\Components\\Pages\\MilesPatrol.razor",
               "ToolTip": "C:\\Users\\blsto\\OneDrive\\Dokumenter\\GitHub\\tomtemplateapi-OPGCoding\\BlazorApp1\\BlazorApp1\\Components\\Pages\\MilesPatrol.razor",
               "RelativeToolTip": "BlazorApp1\\Components\\Pages\\MilesPatrol.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAdAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-07T10:51:34.797Z",
               "IsPinned": true,
@@ -92,13 +91,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MilesDiesel.razor",
               "DocumentMoniker": "C:\\Users\\blsto\\OneDrive\\Dokumenter\\GitHub\\tomtemplateapi-OPGCoding\\BlazorApp1\\BlazorApp1\\Components\\Pages\\MilesDiesel.razor",
               "RelativeDocumentMoniker": "BlazorApp1\\Components\\Pages\\MilesDiesel.razor",
               "ToolTip": "C:\\Users\\blsto\\OneDrive\\Dokumenter\\GitHub\\tomtemplateapi-OPGCoding\\BlazorApp1\\BlazorApp1\\Components\\Pages\\MilesDiesel.razor",
               "RelativeToolTip": "BlazorApp1\\Components\\Pages\\MilesDiesel.razor",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAAEkAAAAaAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEkAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-08T10:21:40.626Z",
               "IsPinned": true,
@@ -106,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "API.cs",
               "DocumentMoniker": "C:\\Users\\blsto\\OneDrive\\Dokumenter\\GitHub\\tomtemplateapi-OPGCoding\\BlazorApp1\\BlazorApp1\\Components\\Pages\\API.cs",
               "RelativeDocumentMoniker": "BlazorApp1\\Components\\Pages\\API.cs",
@@ -115,12 +114,11 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T11:19:48.906Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "APIData.cs",
               "DocumentMoniker": "C:\\Users\\blsto\\OneDrive\\Dokumenter\\GitHub\\tomtemplateapi-OPGCoding\\BlazorApp1\\BlazorApp1\\Components\\Pages\\APIData.cs",
               "RelativeDocumentMoniker": "BlazorApp1\\Components\\Pages\\APIData.cs",
@@ -129,8 +127,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-08T11:42:11.968Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -146,8 +143,7 @@
               "RelativeToolTip": "BlazorApp1\\Components\\Pages\\Data.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-08T11:03:19.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-08T11:03:19.954Z"
             },
             {
               "$type": "Document",
@@ -159,8 +155,7 @@
               "RelativeToolTip": "BlazorApp1\\wwwroot\\Chart.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-07T11:19:12.76Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T11:19:12.76Z"
             },
             {
               "$type": "Document",
@@ -172,8 +167,7 @@
               "RelativeToolTip": "BlazorApp1\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T10:52:57.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T10:52:57.778Z"
             }
           ]
         }
